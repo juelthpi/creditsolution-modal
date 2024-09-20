@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="row">
+        <!--Start Liquidity option modal -->
+        <div class="modal fade" id="user-liquidity-pool" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog liquidity-modal">
+            <div class="modal-content">
+              <span data-bs-dismiss="modal" class="modal-close-btn"><i class="fa-solid fa-xmark"></i></span>
+              <div class="modal-body p-0">
+                <h3>Select Your Daily <span class="playfair-display gradient-text">Liquidity option!</span> </h3>
+                <form class="liquidity-option-boxed">
+                  <div class="liquidity-option-list d-flex align-items-center justify-content-between">
+                    <input type="radio" id="Stock" name="liquidityOption" value="Stock">
+                    <label for="Stock" class="primary-btn">Stock</label>
+                    <input type="radio" id="Commodity" name="liquidityOption" value="Commodity">
+                    <label for="Commodity" class="primary-btn">Commodity </label>
+                    <input type="radio" id="Forex" name="liquidityOption" value="Forex">
+                    <label for="Forex" class="primary-btn">Forex </label>
+                    <input type="radio" id="Crypto" name="liquidityOption" value="Crypto">
+                    <label for="Crypto" class="primary-btn">Crypto </label>
+                  </div>
+                  
+                  <div class="d-flex justify-content-between liquidity-info">
+                    <div class="liquidity-footer-info d-flex align-items-start">
+                      <img src="assets/images/info.png" alt="icon">
+                      <p> Innovative liquidity solutions and strategic investments for a stable and efficient market.</p>
+                    </div>
+                    <div class="liquidity-footer-btn">
+                      <button class="primary-btn" data-bs-toggle="modal" data-bs-target="#congratulations-modal" type="submit">Selected and submit</button>
+                      
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End Liquidity option modal -->
+        <!-- Start congratulations modal -->
+        <div class="modal fade" id="congratulations-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"> 
+          <div class="modal-dialog liquidity-modal congratulations-modal">
+            <div class="modal-content">
+              <span data-bs-dismiss="modal" class="modal-close-btn"><i class="fa-solid fa-xmark"></i></span>
+               <div class="congratulations-modal-body text-center">
+                <img src="assets/images/congratulations.png" alt="img">
+                <h3 class="playfair-display gradient-text">Congratulations</h3>
+                <p>Congratulation you have selected Forex li the Innovative liquidity solutions and strategic investments for a stable and efficient market.</p>
+                <a href="index.html" class="primary-btn">Go To Home</a>
+               </div>
+              
+            </div>
+          </div>
+        </div>
+        <!-- End  congratulations modal-->
+        <div class="col-md-12">
+           <div class="liquidity-common-box d-flex justify-content-between">
+                <h3>Select Your Daily <span class="playfair-display gradient-text">Liquidity option!</span></h3>
+                <div class="liquidity-right-area">
+                  <p>Innovative liquidity solutions and strategic investments for a stable and efficient market.</p>
+                  <div class="button-wrapper d-flex justify-content-end">
+                    <a href="#" class="primary-btn" data-bs-toggle="modal" data-bs-target="#user-liquidity-pool">Liquidity Pool</a>
+                    <i class="fas fa-arrow-right-long"></i>
+                  </div>
+                </div>
+           </div>
+         </div>
+         <div class="col-md-12">
+          <div class="liquidity-common-box d-flex justify-content-between">
+               <h3>Select Your Daily <span class="playfair-display gradient-text">Liquidity option!</span></h3>
+               <div class="liquidity-right-area">
+                 <p><span class="playfair-display gradient-text">Oww! </span> You have already selected the Liquidity option, And It’s</p>
+                 <div class="button-wrapper d-flex justify-content-end">
+                   <a href="#" class="primary-btn commodity-active">Commodity</a>
+                 </div>
+               </div>
+          </div>
+        </div>
+        <div class="col-md-12"> 
+          <div class="liquidity-common-box d-flex justify-content-between">
+               <h3>Select Your Daily <span class="playfair-display gradient-text">Liquidity option!</span></h3>
+               <div class="liquidity-right-area">
+                 <p>Innovative liquidity solutions and strategic investments for a stable and efficient market.</p>
+                 <div class="button-wrapper d-flex justify-content-end liquidity-deactive">
+                   <a href="#" class="primary-btn">Liquidity Pool</a>
+                   <i class="fas fa-arrow-right-long"></i>
+                 </div>
+               </div>
+          </div>
+        </div>
+      </div>
+    
+</body>
+</html>
