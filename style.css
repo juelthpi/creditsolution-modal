@@ -1,6 +1,6 @@
 
 /* new code start */
-.modal-dialog.liquidity-modal {
+.modal-dialog.liquidity-modal,.modal-dialog.nft-details-modal {
 	max-width: 831px;
 	width: 100%;
 	background: transparent;
@@ -10,12 +10,20 @@
   top: 50%;
 	transform: translateY(-50%) !important;
 }
+.nft-details-modal{
+  max-width: 904px !important;
+}
 .liquidity-option-list {
 	border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 	padding-bottom: 66px;
 	margin-bottom: 30px;
 }
-.liquidity-modal .modal-content{
+.nft-modal-body-area{
+  padding: 25px 0;
+  margin-bottom: 26px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+.liquidity-modal .modal-content,.nft-details-modal .modal-content{
   border: 1px solid rgba(255, 255, 255, 0.08);
   padding: 50px;
   padding-top: 56px;
@@ -23,7 +31,10 @@
   border-radius: 35px;
   background-color:#4B2079;
 }
-#user-liquidity-pool,#congratulations-modal {
+.nft-details-modal .modal-content{
+  padding: 36px 47px;
+}
+#user-liquidity-pool,#congratulations-modal,#nft-details-modal {
 	background: rgba(68, 68, 68, 0);
 	backdrop-filter: blur(7px);
 }
@@ -39,14 +50,42 @@ header {
   margin-right: 8px;
   width: 18px;
  }
- .liquidity-modal h3{
+ .nft-modal-left-info ul li span{
+  font-weight: 800;
+  font-size: 28px;
+  line-height: 45px;
+ }
+ .nft-modal-left-info ul li{
+  margin-bottom: 30px;
+  font-size: 20px;
+  font-weight: 500;
+  color:rgba(255, 255, 255, 1);
+  line-height: 25px;
+ }
+ .nft-modal-left-info ul li i{
+  width: 52px;
+  height: 2px;
+  display: inline-block;
+  margin: 0 14px;
+  border-radius:5px;
+  background-color:rgba(247, 247, 247, 1);
+ }
+ .liquidity-modal h3,.nft-details-modal h3{
   font-weight: 500;
   font-size: 36px;
-  text-align: center;
   margin-bottom: 40px;
   color: #fff;
   line-height: 43px;
   letter-spacing: -0.5%;
+ }
+ .nft-details-modal h3{
+  margin-bottom: 0px;
+  padding-bottom: 19px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+ }
+ .nft-details-modal h3 span{
+  font-weight: 700;
+  font-size: 40px;
  }
 .modal-close-btn i{
   font-size: 20px;
@@ -172,6 +211,7 @@ header {
 
 
 @media screen and (max-width: 991px) {
+  
   .liquidity-common-box {
     padding: 40px 35px;
     background: rgba(75, 32, 121, 1);
@@ -210,6 +250,37 @@ header {
     font-size: 34px;
     line-height: 46px;
   }
+  .nft-details-modal .modal-content {
+    padding: 36px 15px;
+  }
+  .nft-details-modal h3,.nft-details-modal h3 span{
+    text-align: center;
+    font-size: 28px;
+  }
+  .nft-modal-right-thum img{
+    width: 180px;
+    object-fit: cover;
+  }
+  .nft-modal-right-thum {
+    width: 100%;
+    text-align: center;
+    order: -2;
+    margin: 20px;
+  }
+  .nft-modal-left-info {
+    width: 100%;
+  }
+  .nft-modal-left-info ul li {
+    justify-content: center;
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+  .nft-modal-left-info ul li span {
+    font-size: 22px;
+  }
+  .nft-modal-left-info ul li i {
+    width: 20px;
+  }
 
 }
 
@@ -228,8 +299,8 @@ header {
   .liquidity-modal h3 {
     font-size: 30px;
   }
-  .modal-dialog.liquidity-modal {
-    width: 96%;
+  .modal-dialog.liquidity-modal,.modal-dialog.nft-details-modal {
+    width: 97%;
   }
   .liquidity-option-list {
     padding-bottom: 30px;
